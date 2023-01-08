@@ -1,0 +1,188 @@
+/* tablet & mobile */
+
+@media (min-width: 1025px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header__content {
+        background: var(--Background-color);
+        max-width: 100%;
+    }
+    .header__tablet {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 14px 0;
+    }
+    .header__contact-heading {
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }
+    .header__logo--table-img {
+        max-width: 113px;
+    }
+    .header__contact-tablet {
+        position: relative;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    .header__contact-item:hover {
+        color: #fff;
+    }
+    .header__tablet--use-icon {
+        font-size: 2rem;
+        color: #fff;
+    }
+    .header__banner {
+        padding-top: 60%;
+    }
+    .header__banner-title.header__banner-Vacations {
+        font-size: 10rem;
+    }
+    .menu__tablet {
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding: 8px 144px 8px 148px;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 1s;
+    }
+    .nav__table-list {
+        width: 100%;
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #EBEBEB;
+    }
+    .nav__link {
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 600;
+    }
+    .nav__table--icon {
+        float: right;
+    }
+    .nav__link:hover {
+        color: var(--Background-color);
+    }
+    .nav__table-list.nav__table-list--bottom {
+        border: none;
+    }
+    .header__contact--checkbox:checked~.menu__tablet {
+        height: 360px;
+        opacity: 1;
+        overflow-y: hidden;
+        overflow: auto;
+    }
+     ::-webkit-scrollbar {
+        width: 0px;
+    }
+    .nav__bar--tablet {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height .8s;
+    }
+    .nav__bar--tabet-list {
+        border-top: 1px solid #EBEBEB;
+    }
+    .nav__bar--link:hover {
+        color: var(--Background-color);
+    }
+    .navbar__checkbox {
+        position: relative;
+        left: -33px;
+    }
+    .navbar__checkbox:checked~.nav__bar--tablet {
+        height: 416px;
+        opacity: 1;
+        padding: 8px 16px;
+    }
+    .nav__bar--tablet--page,
+    .navbar--tablet--destination,
+    .navbar--tablet--tours,
+    .navbar--tablet--blog,
+    .navbar__blog_muti {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.8s;
+    }
+    /* .navbar--tablet--blog {
+        overflow: initial;
+    } */
+    .navbar__checkbox:checked~.nav__bar--tablet--page {
+        height: 330px;
+        opacity: 1;
+        padding: 8px 16px;
+    }
+    .navbar__checkbox:checked~.navbar--tablet--destination {
+        height: 138px;
+        opacity: 1;
+        padding: 8px 16px;
+    }
+    .navbar__checkbox:checked~.navbar--tablet--tours {
+        height: 170px;
+        opacity: 1;
+        padding: 8px 16px;
+    }
+    .navbar--tablet--blog {}
+    .navbar__checkbox:checked~.navbar--tablet--blog {
+        height: 138px;
+        opacity: 1;
+        padding: 8px 16px;
+        display: contents;
+    }
+    .navbar__tablet--icon {
+        margin-top: 20px;
+    }
+    /* .nav__bar--tabet-list--mutlty {
+        display: flex;
+        align-items: center;
+    } */
+    .navbar__blog_muti {
+        padding: 4px 12px;
+    }
+    .navbar__blog-muti--link {
+        color: #000;
+    }
+    .navbar__checkbox:checked~.navbar__blog_muti {
+        height: 120px;
+        opacity: 1;
+    }
+    .nav__bar--tabet-margin {
+        margin-left: 16px;
+    }
+    .container__service-choose {
+        display: block;
+    }
+    .container__service-choose--img {
+        padding: 40px 0;
+        width: 100%;
+    }
+    
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__container--list {
+        width: 50%;
+    }
+}
+
+
+/* mobile */
+
+@media (max-width:740px) {}
